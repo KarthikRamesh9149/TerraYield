@@ -1,0 +1,109 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[75.5, 31.2], [75.7, 31.2], [75.7, 31.0], [75.5, 31.0], [75.5, 31.2]]]
+      },
+      "properties": {
+        "name": "Punjab - Ludhiana",
+        "soil_risk_score": 0.85,
+        "yield_trend": "negative",
+        "yield_trend_pct": -2.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[77.0, 28.6], [77.2, 28.6], [77.2, 28.4], [77.0, 28.4], [77.0, 28.6]]]
+      },
+      "properties": {
+        "name": "Delhi NCR",
+        "soil_risk_score": 0.45,
+        "yield_trend": "zero",
+        "yield_trend_pct": 0.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[72.5, 23.0], [72.7, 23.0], [72.7, 22.8], [72.5, 22.8], [72.5, 23.0]]]
+      },
+      "properties": {
+        "name": "Gujarat - Ahmedabad",
+        "soil_risk_score": 0.22,
+        "yield_trend": "positive",
+        "yield_trend_pct": 1.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[73.8, 18.5], [74.0, 18.5], [74.0, 18.3], [73.8, 18.3], [73.8, 18.5]]]
+      },
+      "properties": {
+        "name": "Maharashtra - Pune",
+        "soil_risk_score": 0.72,
+        "yield_trend": "negative",
+        "yield_trend_pct": -1.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[74.8, 31.6], [75.0, 31.6], [75.0, 31.4], [74.8, 31.4], [74.8, 31.6]]]
+      },
+      "properties": {
+        "name": "Punjab - Jalandhar",
+        "soil_risk_score": 0.15,
+        "yield_trend": "positive",
+        "yield_trend_pct": 2.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[75.8, 26.9], [76.0, 26.9], [76.0, 26.7], [75.8, 26.7], [75.8, 26.9]]]
+      },
+      "properties": {
+        "name": "Rajasthan - Jaipur",
+        "soil_risk_score": 0.58,
+        "yield_trend": "zero",
+        "yield_trend_pct": -0.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[80.2, 26.8], [80.4, 26.8], [80.4, 26.6], [80.2, 26.6], [80.2, 26.8]]]
+      },
+      "properties": {
+        "name": "UP - Lucknow",
+        "soil_risk_score": 0.65,
+        "yield_trend": "negative",
+        "yield_trend_pct": -1.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[78.4, 17.4], [78.6, 17.4], [78.6, 17.2], [78.4, 17.2], [78.4, 17.4]]]
+      },
+      "properties": {
+        "name": "Telangana - Hyderabad",
+        "soil_risk_score": 0.38,
+        "yield_trend": "positive",
+        "yield_trend_pct": 1.2
+      }
+    }
+  ]
+}
