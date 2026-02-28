@@ -1,0 +1,67 @@
+{
+  "downloaded": [
+    "AndhraPradesh",
+    "Assam",
+    "Bihar",
+    "Chhattisgarh",
+    "Goa",
+    "Gujrat",
+    "Haryana",
+    "Jharkhand",
+    "Karnataka",
+    "Kerala",
+    "MadhyaPradesh",
+    "Maharashtra",
+    "Manipur",
+    "Meghalaya",
+    "Mizoram",
+    "Nagaland",
+    "Punjab",
+    "Rajasthan",
+    "Sikkim",
+    "TamilNadu",
+    "Telangana",
+    "Tripura",
+    "UttarPradesh",
+    "Uttarakhand",
+    "WestBengal",
+    "Andaman",
+    "Chandigarh",
+    "Dadra",
+    "Daman",
+    "Delhi",
+    "Lakshadweep",
+    "Puducherry",
+    "Orissa"
+  ],
+  "missing": [
+    [
+      "ArunachalPradesh",
+      "not found/invalid"
+    ],
+    [
+      "HimachalPradesh",
+      "not found/invalid"
+    ],
+    [
+      "Odisha",
+      "not found/invalid"
+    ],
+    [
+      "Ladakh",
+      "not found/invalid"
+    ],
+    [
+      "Pondicherry",
+      "not found/invalid"
+    ],
+    [
+      "Dadra and Nagar Haveli",
+      "error: URL can't contain control characters. '/shuklaneerajdev/IndiaStateTopojsonFiles/refs/heads/master/Dadra and Nagar Haveli.geojson' (found at least ' ')"
+    ],
+    [
+      "Daman and Diu",
+      "error: URL can't contain control characters. '/shuklaneerajdev/IndiaStateTopojsonFiles/refs/heads/master/Daman and Diu.geojson' (found at least ' ')"
+    ]
+  ]
+}
