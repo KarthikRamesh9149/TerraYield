@@ -1,3 +1,4 @@
+import { useState, useMemo } from 'react';
 import { ISSUE_TYPES } from '../constants/mapConfig';
 
 const DISTRICTS = [
@@ -7,13 +8,112 @@ const DISTRICTS = [
   { id: 'mandya_ka', name: 'Mandya', state: 'Karnataka' },
 ];
 
-function Sidebar({ selectedIssue, onIssueChange, selectedDistrict, onDistrictSelect }) {
+function getDistrictLabel(feature) {
+  const state = feature?.properties?.State_Name ?? feature?.properties?.state ?? '';
+  const district = feature?.properties?.Dist_Name ?? feature?.properties?.district ?? '';
+  if (district && district !== 'unknown_district') {
+    return `${district}, ${state}`;
+  }
+  return state || 'Unknown';
+}
+
+function Sidebar({
+  selectedIssue,
+  onIssueChange,
+  selectedDistrict,
+  onDistrictSelect,
+  districts = [],
+  onDistrictSearchSelect,
+  showAllColors = true,
+  onShowAllColorsChange,
+}) {
+  const [searchQuery, setSearchQuery] = useState('');
+  const [isSearchFocused, setIsSearchFocused] = useState(false);
+
+  const filteredDistricts = useMemo(() => {
+    if (!searchQuery.trim()) return districts.slice(0, 10);
+    const q = searchQuery.trim().toLowerCase();
+    return districts
+      .filter((d) => {
+        const label = getDistrictLabel(d.feature).toLowerCase();
+        const state = (d.feature?.properties?.State_Name ?? '').toLowerCase();
+        const district = (d.feature?.properties?.Dist_Name ?? '').toLowerCase();
+        return label.includes(q) || state.includes(q) || district.includes(q);
+      })
+      .slice(0, 12);
+  }, [districts, searchQuery]);
+
+  const handleDistrictSearchClick = (d) => {
+    onDistrictSearchSelect?.(d.feature);
+    setSearchQuery(getDistrictLabel(d.feature));
+    setIsSearchFocused(false);
+  };
+
+  const handleSearchKeyDown = (e) => {
+    if (e.key === 'Enter' && filteredDistricts.length > 0) {
+      handleDistrictSearchClick(filteredDistricts[0]);
+    }
+  };
   return (
     <div className="sidebar">
       <div className="sidebar-header">
         <h1 className="sidebar-title">Agri Intelligence</h1>
         <p className="sidebar-subtitle">Agricultural Insights for India</p>
       </div>
+
+      {onDistrictSearchSelect && districts.length > 0 && (
+        <div className="sidebar-section sidebar-search">
+          <h2 className="section-title">Search Districts</h2>
+          <input
+            type="text"
+            className="search-input"
+            placeholder="Search districts..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            onFocus={() => setIsSearchFocused(true)}
+            onBlur={() => setTimeout(() => setIsSearchFocused(false), 150)}
+            onKeyDown={handleSearchKeyDown}
+          />
+          {isSearchFocused && filteredDistricts.length > 0 && (
+            <ul className="search-results">
+              {filteredDistricts.map((d, i) => (
+                <li key={i}>
+                  <button
+                    type="button"
+                    className="search-result-item"
+                    onMouseDown={() => handleDistrictSearchClick(d)}
+                  >
+                    {getDistrictLabel(d.feature)}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      )}
+
+      {onShowAllColorsChange && (
+        <div className="sidebar-section">
+          <h2 className="section-title">District Colors</h2>
+          <label className="toggle-switch-row">
+            <span className="toggle-label">Show all</span>
+            <button
+              type="button"
+              role="switch"
+              aria-checked={showAllColors}
+              className={`toggle-switch ${showAllColors ? 'on' : ''}`}
+              onClick={() => onShowAllColorsChange(!showAllColors)}
+            >
+              <span className="toggle-slider" />
+            </button>
+          </label>
+          <p className="section-description">
+            {showAllColors
+              ? 'All districts colored by risk level'
+              : 'Only hovered district shows risk color'}
+          </p>
+        </div>
+      )}
 
       <div className="sidebar-section">
         <h2 className="section-title">Issue Layers</h2>

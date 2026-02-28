@@ -1,11 +1,30 @@
 import { ISSUE_TYPES } from '../constants/mapConfig';
 
 function Legend({ selectedIssue }) {
-  if (!selectedIssue) {
-    return null;
-  }
-
   const isSoil = selectedIssue === ISSUE_TYPES.SOIL;
+
+  // Default: show district soil risk legend (districts are always colored)
+  if (!selectedIssue) {
+    return (
+      <div className="legend">
+        <h3 className="legend-title">Soil Degradation Risk</h3>
+        <div className="legend-items">
+          <div className="legend-item">
+            <span className="legend-color" style={{ backgroundColor: 'rgb(76, 175, 80)' }} />
+            <span className="legend-label">Low</span>
+          </div>
+          <div className="legend-item">
+            <span className="legend-color" style={{ backgroundColor: 'rgb(255, 140, 0)' }} />
+            <span className="legend-label">Medium</span>
+          </div>
+          <div className="legend-item">
+            <span className="legend-color" style={{ backgroundColor: 'rgb(244, 67, 54)' }} />
+            <span className="legend-label">High</span>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="legend">

@@ -20,12 +20,14 @@ export const MAP_STYLE = 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/
 export const COLORS = {
   // Boundaries
   boundaryFill: [30, 30, 40, 100],
+  boundaryFillNeutral: [50, 50, 55, 80],  // Subtle fill when "Show All" is off (non-hovered)
   boundaryLine: [100, 100, 120, 255],
 
-  // Risk levels
-  lowRisk: [76, 175, 80, 200],      // Green
-  mediumRisk: [255, 193, 7, 200],   // Yellow/Amber
-  highRisk: [244, 67, 54, 200],     // Red
+  // Risk levels - opaque fills so district areas are clearly visible
+  lowRisk: [76, 175, 80, 230],      // Green
+  mediumRisk: [255, 140, 0, 230],   // Orange
+  highRisk: [244, 67, 54, 230],     // Red
+  severeRisk: [139, 0, 0, 220],    // Dark red
   unknown: [128, 128, 128, 200],    // Gray
 
   // Hotspot hover

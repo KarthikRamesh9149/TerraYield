@@ -15,16 +15,26 @@ function Tooltip({ feature, position }) {
     <div className="tooltip" style={tooltipStyle}>
       {type === 'boundary' && (
         <>
-          <div className="tooltip-header">{properties.name}</div>
+          <div className="tooltip-header">
+            {properties.State_Name || properties.state || properties.name}
+          </div>
           <div className="tooltip-content">
-            <div className="tooltip-row">
-              <span className="tooltip-label">State Code</span>
-              <span className="tooltip-value">{properties.state_code}</span>
-            </div>
-            {properties.capital && (
+            {(properties.Dist_Name && properties.Dist_Name !== 'unknown_district') && (
               <div className="tooltip-row">
-                <span className="tooltip-label">Capital</span>
-                <span className="tooltip-value">{properties.capital}</span>
+                <span className="tooltip-label">District</span>
+                <span className="tooltip-value">{properties.Dist_Name}</span>
+              </div>
+            )}
+            {properties.Dist_Code && (
+              <div className="tooltip-row">
+                <span className="tooltip-label">Code</span>
+                <span className="tooltip-value">{properties.Dist_Code}</span>
+              </div>
+            )}
+            {properties.degradation_level && (
+              <div className="tooltip-row">
+                <span className="tooltip-label">Soil Risk</span>
+                <span className="tooltip-value">{String(properties.degradation_level).charAt(0).toUpperCase() + String(properties.degradation_level).slice(1)}</span>
               </div>
             )}
           </div>
