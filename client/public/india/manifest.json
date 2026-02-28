@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0",
+  "states": [
+    {
+      "slug": "maharashtra",
+      "name": "Maharashtra",
+      "file": "maharashtra.geojson"
+    },
+    {
+      "slug": "punjab",
+      "name": "Punjab",
+      "file": "punjab.geojson"
+    },
+    {
+      "slug": "karnataka",
+      "name": "Karnataka",
+      "file": "karnataka.geojson"
+    }
+  ]
+}

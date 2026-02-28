@@ -1,0 +1,184 @@
+[
+  {
+    "crop_id": "tur_dal",
+    "companion_crop_id": "jowar",
+    "nitrogen_benefit_kg_ha": 40,
+    "urea_equivalent_saved_kg": 87,
+    "cost_saved_inr_ha": 2500
+  },
+  {
+    "crop_id": "tur_dal",
+    "companion_crop_id": "ragi",
+    "nitrogen_benefit_kg_ha": 35,
+    "urea_equivalent_saved_kg": 76,
+    "cost_saved_inr_ha": 2200
+  },
+  {
+    "crop_id": "moong",
+    "companion_crop_id": "bajra",
+    "nitrogen_benefit_kg_ha": 30,
+    "urea_equivalent_saved_kg": 65,
+    "cost_saved_inr_ha": 1900
+  },
+  {
+    "crop_id": "moong",
+    "companion_crop_id": "sesame",
+    "nitrogen_benefit_kg_ha": 28,
+    "urea_equivalent_saved_kg": 61,
+    "cost_saved_inr_ha": 1750
+  },
+  {
+    "crop_id": "moong",
+    "companion_crop_id": "castor",
+    "nitrogen_benefit_kg_ha": 32,
+    "urea_equivalent_saved_kg": 70,
+    "cost_saved_inr_ha": 2000
+  },
+  {
+    "crop_id": "urad",
+    "companion_crop_id": "jowar",
+    "nitrogen_benefit_kg_ha": 35,
+    "urea_equivalent_saved_kg": 76,
+    "cost_saved_inr_ha": 2200
+  },
+  {
+    "crop_id": "urad",
+    "companion_crop_id": "maize",
+    "nitrogen_benefit_kg_ha": 33,
+    "urea_equivalent_saved_kg": 72,
+    "cost_saved_inr_ha": 2050
+  },
+  {
+    "crop_id": "chana",
+    "companion_crop_id": "mustard",
+    "nitrogen_benefit_kg_ha": 45,
+    "urea_equivalent_saved_kg": 98,
+    "cost_saved_inr_ha": 2800
+  },
+  {
+    "crop_id": "chana",
+    "companion_crop_id": "safflower",
+    "nitrogen_benefit_kg_ha": 42,
+    "urea_equivalent_saved_kg": 91,
+    "cost_saved_inr_ha": 2600
+  },
+  {
+    "crop_id": "chana",
+    "companion_crop_id": "wheat",
+    "nitrogen_benefit_kg_ha": 38,
+    "urea_equivalent_saved_kg": 83,
+    "cost_saved_inr_ha": 2400
+  },
+  {
+    "crop_id": "groundnut",
+    "companion_crop_id": "bajra",
+    "nitrogen_benefit_kg_ha": 38,
+    "urea_equivalent_saved_kg": 83,
+    "cost_saved_inr_ha": 2400
+  },
+  {
+    "crop_id": "groundnut",
+    "companion_crop_id": "castor",
+    "nitrogen_benefit_kg_ha": 36,
+    "urea_equivalent_saved_kg": 78,
+    "cost_saved_inr_ha": 2250
+  },
+  {
+    "crop_id": "soybean",
+    "companion_crop_id": "jowar",
+    "nitrogen_benefit_kg_ha": 50,
+    "urea_equivalent_saved_kg": 109,
+    "cost_saved_inr_ha": 3100
+  },
+  {
+    "crop_id": "soybean",
+    "companion_crop_id": "maize",
+    "nitrogen_benefit_kg_ha": 48,
+    "urea_equivalent_saved_kg": 104,
+    "cost_saved_inr_ha": 3000
+  },
+  {
+    "crop_id": "soybean",
+    "companion_crop_id": "sunflower",
+    "nitrogen_benefit_kg_ha": 45,
+    "urea_equivalent_saved_kg": 98,
+    "cost_saved_inr_ha": 2800
+  },
+  {
+    "crop_id": "jowar",
+    "companion_crop_id": "tur_dal",
+    "nitrogen_benefit_kg_ha": 40,
+    "urea_equivalent_saved_kg": 87,
+    "cost_saved_inr_ha": 2500
+  },
+  {
+    "crop_id": "bajra",
+    "companion_crop_id": "moong",
+    "nitrogen_benefit_kg_ha": 30,
+    "urea_equivalent_saved_kg": 65,
+    "cost_saved_inr_ha": 1900
+  },
+  {
+    "crop_id": "bajra",
+    "companion_crop_id": "groundnut",
+    "nitrogen_benefit_kg_ha": 38,
+    "urea_equivalent_saved_kg": 83,
+    "cost_saved_inr_ha": 2400
+  },
+  {
+    "crop_id": "ragi",
+    "companion_crop_id": "tur_dal",
+    "nitrogen_benefit_kg_ha": 35,
+    "urea_equivalent_saved_kg": 76,
+    "cost_saved_inr_ha": 2200
+  },
+  {
+    "crop_id": "castor",
+    "companion_crop_id": "moong",
+    "nitrogen_benefit_kg_ha": 32,
+    "urea_equivalent_saved_kg": 70,
+    "cost_saved_inr_ha": 2000
+  },
+  {
+    "crop_id": "safflower",
+    "companion_crop_id": "chana",
+    "nitrogen_benefit_kg_ha": 42,
+    "urea_equivalent_saved_kg": 91,
+    "cost_saved_inr_ha": 2600
+  },
+  {
+    "crop_id": "mustard",
+    "companion_crop_id": "chana",
+    "nitrogen_benefit_kg_ha": 45,
+    "urea_equivalent_saved_kg": 98,
+    "cost_saved_inr_ha": 2800
+  },
+  {
+    "crop_id": "sesame",
+    "companion_crop_id": "moong",
+    "nitrogen_benefit_kg_ha": 28,
+    "urea_equivalent_saved_kg": 61,
+    "cost_saved_inr_ha": 1750
+  },
+  {
+    "crop_id": "maize",
+    "companion_crop_id": "urad",
+    "nitrogen_benefit_kg_ha": 33,
+    "urea_equivalent_saved_kg": 72,
+    "cost_saved_inr_ha": 2050
+  },
+  {
+    "crop_id": "maize",
+    "companion_crop_id": "soybean",
+    "nitrogen_benefit_kg_ha": 48,
+    "urea_equivalent_saved_kg": 104,
+    "cost_saved_inr_ha": 3000
+  },
+  {
+    "crop_id": "sunflower",
+    "companion_crop_id": "soybean",
+    "nitrogen_benefit_kg_ha": 45,
+    "urea_equivalent_saved_kg": 98,
+    "cost_saved_inr_ha": 2800
+  }
+]

@@ -1,0 +1,95 @@
+
+{
+  "district_id": "bathinda_pb",
+  "name": "Bathinda",
+  "state": "Punjab",
+  "region_type": "groundwater_emergency",
+  "feature_1_land_intelligence": {
+    "geography": {
+      "lat_center": 30.2109,
+      "lon_center": 74.9455,
+      "elevation_m": 205,
+      "soil_type": "Alluvial sandy loam",
+      "soil_ph": 8.2,
+      "organic_carbon_percent": 0.35,
+      "nitrogen_kg_hectare": 210,
+      "texture": "Sandy loam"
+    },
+    "water": {
+      "groundwater_depth_m": 38,
+      "critical_depth_m": 120,
+      "extraction_rate_m_year": 1.4,
+      "years_until_bankruptcy": 12,
+      "rainfall_mm_annual": 430,
+      "rainfall_trend_20yr": "declining_minus_7pct",
+      "aquifer_status": "overexploited"
+    },
+    "climate": {
+      "max_temp_c": 47,
+      "heat_stress_days_above_40c": 24,
+      "drought_probability": "high"
+    },
+    "current_status": {
+      "dominant_crop": "rice paddy",
+      "secondary_crop": "wheat",
+      "current_crop_water_usage_liters_kg": 40000,
+      "land_degradation_status": "severe"
+    }
+  },
+  "feature_2_crop_economics": {
+    "current_crop_profile": {
+      "crop": "paddy rice",
+      "local_name": "ਚੌਲ (Chaul)",
+      "profit_per_hectare_inr": 45000,
+      "water_requirement_liters_kg": 40000,
+      "input_cost_fertilizer_inr_hectare": 22000,
+      "input_cost_pesticide_inr_hectare": 9000,
+      "pesticide_sprays_per_season": 4,
+      "msp_exists": true,
+      "market_volatility": "stable",
+      "price_trend": "stable"
+    },
+    "recommended_alternative": {
+      "primary": "maize (for ethanol/feed)",
+      "local_name": "ਮੱਕੀ (Makki)",
+      "companion": "green gram (moong)",
+      "intercropping_ratio": "70:30",
+      "profit_per_hectare_inr": 52000,
+      "water_requirement_liters_kg": 5200,
+      "nitrogen_fixation": true,
+      "input_cost_fertilizer_inr_hectare": 12000,
+      "msp_per_quintal_inr": 2225,
+      "market_trend": "rising",
+      "reasoning": "Maize uses ~90% less water than paddy and has strong demand for biofuel/feed. Paired with moong for nitrogen and market diversity. This switch addresses Bathinda’s “cancer belt” stress on water quality while boosting incomes under rising cereal prices."
+    },
+    "economic_arbitrage": {
+      "income_increase_pct": 16,
+      "water_savings_pct": 87,
+      "fertilizer_savings_inr_hectare": 10000
+    }
+  },
+  "feature_3_policy_arbitrage": {
+    "current_subsidies_waste": {
+      "total_subsidy_inr_crore": 980,
+      "efficiency_score_pct": 22,
+      "water_cost_externalized_inr_lakh": 22500
+    },
+    "recommended_reallocation": {
+      "shift_from": "free power for tube-wells + paddy procurement",
+      "shift_to": "maize procurement + drip irrigation grants",
+      "amount_shift_inr_lakh": 32000,
+      "phase_over_years": 5,
+      "farmer_income_protection": "MSP-backed maize buyback + yield insurance"
+    },
+    "impact_projection": {
+      "water_saved_billion_liters_yearly": 1480.8,
+      "farmers_benefited_count": 156000,
+      "co2_reduction_tons_yearly": 210000,
+      "import_substitution_value_inr_crore": 520
+    }
+  },
+  "feature_5_citations": {
+    "data_quality_note": "Representative profile based on 2023-24 agricultural studies",
+    "confidence_level": "high"
+  }
+}

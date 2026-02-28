@@ -1,0 +1,97 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "district_id": "ahmednagar_mh",
+        "name": "Ahmednagar",
+        "state": "Maharashtra",
+        "soil_risk_score": 0.78,
+        "yield_trend": "decreasing",
+        "yield_trend_pct": -12
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [74.25, 18.60],
+            [75.25, 18.60],
+            [75.25, 19.60],
+            [74.25, 19.60],
+            [74.25, 18.60]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_id": "yavatmal_mh",
+        "name": "Yavatmal",
+        "state": "Maharashtra",
+        "soil_risk_score": 0.55,
+        "yield_trend": "decreasing",
+        "yield_trend_pct": -9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [77.62, 19.89],
+            [78.62, 19.89],
+            [78.62, 20.89],
+            [77.62, 20.89],
+            [77.62, 19.89]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_id": "bathinda_pb",
+        "name": "Bathinda",
+        "state": "Punjab",
+        "soil_risk_score": 0.82,
+        "yield_trend": "flat",
+        "yield_trend_pct": 2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [74.45, 29.71],
+            [75.45, 29.71],
+            [75.45, 30.71],
+            [74.45, 30.71],
+            [74.45, 29.71]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_id": "mandya_ka",
+        "name": "Mandya",
+        "state": "Karnataka",
+        "soil_risk_score": 0.42,
+        "yield_trend": "increasing",
+        "yield_trend_pct": 6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [76.40, 12.02],
+            [77.40, 12.02],
+            [77.40, 13.02],
+            [76.40, 13.02],
+            [76.40, 12.02]
+          ]
+        ]
+      }
+    }
+  ]
+}

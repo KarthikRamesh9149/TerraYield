@@ -1,0 +1,94 @@
+{
+  "district_id": "ahmednagar_mh",
+  "name": "Ahmednagar",
+  "state": "Maharashtra",
+  "region_type": "drought_prone",
+  "feature_1_land_intelligence": {
+    "geography": {
+      "lat_center": 19.0948,
+      "lon_center": 74.7480,
+      "elevation_m": 650,
+      "soil_type": "Black cotton soil (Vertisol)",
+      "soil_ph": 7.8,
+      "organic_carbon_percent": 0.45,
+      "nitrogen_kg_hectare": 220,
+      "texture": "Clayey"
+    },
+    "water": {
+      "groundwater_depth_m": 72,
+      "critical_depth_m": 120,
+      "extraction_rate_m_year": 3.6,
+      "years_until_bankruptcy": 8,
+      "rainfall_mm_annual": 520,
+      "rainfall_trend_20yr": "declining_minus_12pct",
+      "aquifer_status": "overexploited"
+    },
+    "climate": {
+      "max_temp_c": 45,
+      "heat_stress_days_above_40c": 38,
+      "drought_probability": "very_high"
+    },
+    "current_status": {
+      "dominant_crop": "BT cotton",
+      "secondary_crop": "soybean",
+      "current_crop_water_usage_liters_kg": 22000,
+      "land_degradation_status": "severe"
+    }
+  },
+  "feature_2_crop_economics": {
+    "current_crop_profile": {
+      "crop": "cotton (BT)",
+      "local_name": "कापूस (Kapus)",
+      "profit_per_hectare_inr": 32000,
+      "water_requirement_liters_kg": 22000,
+      "input_cost_fertilizer_inr_hectare": 18000,
+      "input_cost_pesticide_inr_hectare": 26000,
+      "pesticide_sprays_per_season": 10,
+      "msp_exists": true,
+      "market_volatility": "extreme",
+      "price_trend": "declining"
+    },
+    "recommended_alternative": {
+      "primary": "pigeon pea (tur dal)",
+      "local_name": "तूर (Tur)",
+      "companion": "sorghum (jowar)",
+      "intercropping_ratio": "80:20",
+      "profit_per_hectare_inr": 52000,
+      "water_requirement_liters_kg": 2200,
+      "nitrogen_fixation": true,
+      "input_cost_fertilizer_inr_hectare": 6500,
+      "msp_per_quintal_inr": 7550,
+      "market_trend": "rising",
+      "reasoning": "Heat-tolerant, nitrogen-fixing legume that thrives with ~90% less water. Intercropping with sorghum stabilizes yield and adds fodder, reducing risks while matching cotton profits under rising pulse demand[4]."
+    },
+    "economic_arbitrage": {
+      "income_increase_pct": 62,
+      "water_savings_pct": 90,
+      "fertilizer_savings_inr_hectare": 11500
+    }
+  },
+  "feature_3_policy_arbitrage": {
+    "current_subsidies_waste": {
+      "total_subsidy_inr_crore": 420,
+      "efficiency_score_pct": 28,
+      "water_cost_externalized_inr_lakh": 9800
+    },
+    "recommended_reallocation": {
+      "shift_from": "power subsidy + input-intensive cotton support",
+      "shift_to": "drip-irrigation grants + pulse MSP + risk insurance",
+      "amount_shift_inr_lakh": 18500,
+      "phase_over_years": 4,
+      "farmer_income_protection": "2-year MSP floor for tur + Rabi income guarantee"
+    },
+    "impact_projection": {
+      "water_saved_billion_liters_yearly": 610.5,
+      "farmers_benefited_count": 94000,
+      "co2_reduction_tons_yearly": 118000,
+      "import_substitution_value_inr_crore": 340
+    }
+  },
+  "feature_5_citations": {
+    "data_quality_note": "Representative profile based on 2023-24 agricultural studies",
+    "confidence_level": "high"
+  }
+}

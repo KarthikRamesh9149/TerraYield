@@ -1,0 +1,420 @@
+[
+  {
+    "crop_id": "tur_dal",
+    "name": "Pigeon Pea (Tur Dal)",
+    "local_name": "तूर",
+    "agronomy": {
+      "ph_min": 5.0,
+      "ph_max": 8.5,
+      "temp_max_survival_c": 45,
+      "water_need_mm": 400,
+      "drought_tolerance": 0.85,
+      "nitrogen_fixation": true,
+      "water_liters_per_kg": 2200
+    },
+    "economics": {
+      "profit_band": 4,
+      "msp_inr_quintal": 7550
+    },
+    "companion": {
+      "best_companion_crop_id": "jowar",
+      "intercropping_ratio": "80:20"
+    }
+  },
+  {
+    "crop_id": "jowar",
+    "name": "Sorghum (Jowar)",
+    "local_name": "ज्वार",
+    "agronomy": {
+      "ph_min": 5.5,
+      "ph_max": 8.5,
+      "temp_max_survival_c": 48,
+      "water_need_mm": 350,
+      "drought_tolerance": 0.90,
+      "nitrogen_fixation": false,
+      "water_liters_per_kg": 1800
+    },
+    "economics": {
+      "profit_band": 3,
+      "msp_inr_quintal": 3225
+    },
+    "companion": {
+      "best_companion_crop_id": "tur_dal",
+      "intercropping_ratio": "50:50"
+    }
+  },
+  {
+    "crop_id": "bajra",
+    "name": "Pearl Millet (Bajra)",
+    "local_name": "बाजरा",
+    "agronomy": {
+      "ph_min": 5.5,
+      "ph_max": 8.0,
+      "temp_max_survival_c": 50,
+      "water_need_mm": 300,
+      "drought_tolerance": 0.95,
+      "nitrogen_fixation": false,
+      "water_liters_per_kg": 1500
+    },
+    "economics": {
+      "profit_band": 3,
+      "msp_inr_quintal": 2625
+    },
+    "companion": {
+      "best_companion_crop_id": "moong",
+      "intercropping_ratio": "70:30"
+    }
+  },
+  {
+    "crop_id": "moong",
+    "name": "Green Gram (Moong)",
+    "local_name": "मूंग",
+    "agronomy": {
+      "ph_min": 6.2,
+      "ph_max": 7.8,
+      "temp_max_survival_c": 42,
+      "water_need_mm": 350,
+      "drought_tolerance": 0.70,
+      "nitrogen_fixation": true,
+      "water_liters_per_kg": 2500
+    },
+    "economics": {
+      "profit_band": 4,
+      "msp_inr_quintal": 8682
+    },
+    "companion": {
+      "best_companion_crop_id": "bajra",
+      "intercropping_ratio": "60:40"
+    }
+  },
+  {
+    "crop_id": "urad",
+    "name": "Black Gram (Urad)",
+    "local_name": "उड़द",
+    "agronomy": {
+      "ph_min": 6.0,
+      "ph_max": 7.5,
+      "temp_max_survival_c": 40,
+      "water_need_mm": 400,
+      "drought_tolerance": 0.65,
+      "nitrogen_fixation": true,
+      "water_liters_per_kg": 2700
+    },
+    "economics": {
+      "profit_band": 4,
+      "msp_inr_quintal": 7400
+    },
+    "companion": {
+      "best_companion_crop_id": "jowar",
+      "intercropping_ratio": "60:40"
+    }
+  },
+  {
+    "crop_id": "chana",
+    "name": "Chickpea (Chana)",
+    "local_name": "चना",
+    "agronomy": {
+      "ph_min": 5.5,
+      "ph_max": 8.0,
+      "temp_max_survival_c": 38,
+      "water_need_mm": 350,
+      "drought_tolerance": 0.75,
+      "nitrogen_fixation": true,
+      "water_liters_per_kg": 2800
+    },
+    "economics": {
+      "profit_band": 4,
+      "msp_inr_quintal": 5440
+    },
+    "companion": {
+      "best_companion_crop_id": "mustard",
+      "intercropping_ratio": "75:25"
+    }
+  },
+  {
+    "crop_id": "groundnut",
+    "name": "Groundnut (Peanut)",
+    "local_name": "मूंगफली",
+    "agronomy": {
+      "ph_min": 5.5,
+      "ph_max": 7.5,
+      "temp_max_survival_c": 43,
+      "water_need_mm": 500,
+      "drought_tolerance": 0.70,
+      "nitrogen_fixation": true,
+      "water_liters_per_kg": 2400
+    },
+    "economics": {
+      "profit_band": 4,
+      "msp_inr_quintal": 6377
+    },
+    "companion": {
+      "best_companion_crop_id": "bajra",
+      "intercropping_ratio": "70:30"
+    }
+  },
+  {
+    "crop_id": "soybean",
+    "name": "Soybean",
+    "local_name": "सोयाबीन",
+    "agronomy": {
+      "ph_min": 6.0,
+      "ph_max": 7.5,
+      "temp_max_survival_c": 40,
+      "water_need_mm": 550,
+      "drought_tolerance": 0.60,
+      "nitrogen_fixation": true,
+      "water_liters_per_kg": 2800
+    },
+    "economics": {
+      "profit_band": 4,
+      "msp_inr_quintal": 4892
+    },
+    "companion": {
+      "best_companion_crop_id": "jowar",
+      "intercropping_ratio": "65:35"
+    }
+  },
+  {
+    "crop_id": "mustard",
+    "name": "Mustard",
+    "local_name": "सरसों",
+    "agronomy": {
+      "ph_min": 5.8,
+      "ph_max": 8.0,
+      "temp_max_survival_c": 38,
+      "water_need_mm": 300,
+      "drought_tolerance": 0.80,
+      "nitrogen_fixation": false,
+      "water_liters_per_kg": 2100
+    },
+    "economics": {
+      "profit_band": 4,
+      "msp_inr_quintal": 5650
+    },
+    "companion": {
+      "best_companion_crop_id": "chana",
+      "intercropping_ratio": "70:30"
+    }
+  },
+  {
+    "crop_id": "sesame",
+    "name": "Sesame (Til)",
+    "local_name": "तिल",
+    "agronomy": {
+      "ph_min": 5.5,
+      "ph_max": 8.0,
+      "temp_max_survival_c": 44,
+      "water_need_mm": 350,
+      "drought_tolerance": 0.85,
+      "nitrogen_fixation": false,
+      "water_liters_per_kg": 2400
+    },
+    "economics": {
+      "profit_band": 5,
+      "msp_inr_quintal": 8635
+    },
+    "companion": {
+      "best_companion_crop_id": "moong",
+      "intercropping_ratio": "60:40"
+    }
+  },
+  {
+    "crop_id": "castor",
+    "name": "Castor",
+    "local_name": "अरंडी",
+    "agronomy": {
+      "ph_min": 5.0,
+      "ph_max": 8.5,
+      "temp_max_survival_c": 48,
+      "water_need_mm": 400,
+      "drought_tolerance": 0.90,
+      "nitrogen_fixation": false,
+      "water_liters_per_kg": 1900
+    },
+    "economics": {
+      "profit_band": 4,
+      "msp_inr_quintal": 6250
+    },
+    "companion": {
+      "best_companion_crop_id": "moong",
+      "intercropping_ratio": "80:20"
+    }
+  },
+  {
+    "crop_id": "safflower",
+    "name": "Safflower (Kusum)",
+    "local_name": "कुसुम",
+    "agronomy": {
+      "ph_min": 5.5,
+      "ph_max": 8.5,
+      "temp_max_survival_c": 46,
+      "water_need_mm": 300,
+      "drought_tolerance": 0.90,
+      "nitrogen_fixation": false,
+      "water_liters_per_kg": 1600
+    },
+    "economics": {
+      "profit_band": 3,
+      "msp_inr_quintal": 5800
+    },
+    "companion": {
+      "best_companion_crop_id": "chana",
+      "intercropping_ratio": "70:30"
+    }
+  },
+  {
+    "crop_id": "sunflower",
+    "name": "Sunflower",
+    "local_name": "सूरजमुखी",
+    "agronomy": {
+      "ph_min": 6.0,
+      "ph_max": 8.0,
+      "temp_max_survival_c": 42,
+      "water_need_mm": 450,
+      "drought_tolerance": 0.70,
+      "nitrogen_fixation": false,
+      "water_liters_per_kg": 3200
+    },
+    "economics": {
+      "profit_band": 3,
+      "msp_inr_quintal": 6760
+    },
+    "companion": {
+      "best_companion_crop_id": "soybean",
+      "intercropping_ratio": "65:35"
+    }
+  },
+  {
+    "crop_id": "maize",
+    "name": "Maize (Corn)",
+    "local_name": "मक्का",
+    "agronomy": {
+      "ph_min": 5.5,
+      "ph_max": 7.5,
+      "temp_max_survival_c": 40,
+      "water_need_mm": 500,
+      "drought_tolerance": 0.55,
+      "nitrogen_fixation": false,
+      "water_liters_per_kg": 3500
+    },
+    "economics": {
+      "profit_band": 3,
+      "msp_inr_quintal": 2090
+    },
+    "companion": {
+      "best_companion_crop_id": "urad",
+      "intercropping_ratio": "70:30"
+    }
+  },
+  {
+    "crop_id": "ragi",
+    "name": "Finger Millet (Ragi)",
+    "local_name": "रागी",
+    "agronomy": {
+      "ph_min": 5.0,
+      "ph_max": 8.0,
+      "temp_max_survival_c": 42,
+      "water_need_mm": 400,
+      "drought_tolerance": 0.85,
+      "nitrogen_fixation": false,
+      "water_liters_per_kg": 1800
+    },
+    "economics": {
+      "profit_band": 3,
+      "msp_inr_quintal": 3846
+    },
+    "companion": {
+      "best_companion_crop_id": "tur_dal",
+      "intercropping_ratio": "60:40"
+    }
+  },
+  {
+    "crop_id": "cotton_bt",
+    "name": "Cotton (BT)",
+    "local_name": "कापूस",
+    "agronomy": {
+      "ph_min": 6.0,
+      "ph_max": 8.5,
+      "temp_max_survival_c": 45,
+      "water_need_mm": 700,
+      "drought_tolerance": 0.45,
+      "nitrogen_fixation": false,
+      "water_liters_per_kg": 22000
+    },
+    "economics": {
+      "profit_band": 2,
+      "msp_inr_quintal": 6620
+    },
+    "companion": {
+      "best_companion_crop_id": "moong",
+      "intercropping_ratio": "85:15"
+    }
+  },
+  {
+    "crop_id": "sugarcane",
+    "name": "Sugarcane",
+    "local_name": "गन्ना",
+    "agronomy": {
+      "ph_min": 6.0,
+      "ph_max": 8.0,
+      "temp_max_survival_c": 42,
+      "water_need_mm": 1500,
+      "drought_tolerance": 0.25,
+      "nitrogen_fixation": false,
+      "water_liters_per_kg": 15000
+    },
+    "economics": {
+      "profit_band": 3,
+      "msp_inr_quintal": 315
+    },
+    "companion": {
+      "best_companion_crop_id": "soybean",
+      "intercropping_ratio": "90:10"
+    }
+  },
+  {
+    "crop_id": "wheat",
+    "name": "Wheat",
+    "local_name": "गेहूं",
+    "agronomy": {
+      "ph_min": 6.0,
+      "ph_max": 8.5,
+      "temp_max_survival_c": 35,
+      "water_need_mm": 450,
+      "drought_tolerance": 0.50,
+      "nitrogen_fixation": false,
+      "water_liters_per_kg": 5500
+    },
+    "economics": {
+      "profit_band": 3,
+      "msp_inr_quintal": 2275
+    },
+    "companion": {
+      "best_companion_crop_id": "chana",
+      "intercropping_ratio": "75:25"
+    }
+  },
+  {
+    "crop_id": "rice_paddy",
+    "name": "Rice (Paddy)",
+    "local_name": "धान",
+    "agronomy": {
+      "ph_min": 5.0,
+      "ph_max": 8.0,
+      "temp_max_survival_c": 38,
+      "water_need_mm": 1200,
+      "drought_tolerance": 0.20,
+      "nitrogen_fixation": false,
+      "water_liters_per_kg": 4500
+    },
+    "economics": {
+      "profit_band": 3,
+      "msp_inr_quintal": 2203
+    },
+    "companion": {
+      "best_companion_crop_id": "moong",
+      "intercropping_ratio": "85:15"
+    }
+  }
+]

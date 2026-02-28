@@ -1,0 +1,23 @@
+{
+  "name": "agri-intelligence",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Agri Intelligence Dashboard - Agricultural insights for India",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently --kill-others-on-fail \"npm run dev --workspace=server\" \"npm run dev --workspace=client\"",
+    "dev:pnpm": "concurrently --kill-others-on-fail \"pnpm --filter server dev\" \"pnpm --filter client dev\"",
+    "build": "npm run build --workspace=server && npm run build --workspace=client",
+    "lint": "npm run lint --workspaces --if-present",
+    "clean": "rm -rf node_modules client/node_modules server/node_modules"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
